@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ch4rl\\source\\repos\\SpaceAppsKAM\\Front\\Front.csproj": {}
+    "C:\\RepositoriosGit\\SpaceAppsKam\\SpaceAppsKAM\\Front\\Front.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ch4rl\\source\\repos\\SpaceAppsKAM\\Front\\Front.csproj": {
+    "C:\\RepositoriosGit\\SpaceAppsKam\\SpaceAppsKAM\\Front\\Front.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ch4rl\\source\\repos\\SpaceAppsKAM\\Front\\Front.csproj",
+        "projectUniqueName": "C:\\RepositoriosGit\\SpaceAppsKam\\SpaceAppsKAM\\Front\\Front.csproj",
         "projectName": "Front",
-        "projectPath": "C:\\Users\\Ch4rl\\source\\repos\\SpaceAppsKAM\\Front\\Front.csproj",
+        "projectPath": "C:\\RepositoriosGit\\SpaceAppsKam\\SpaceAppsKAM\\Front\\Front.csproj",
         "packagesPath": "C:\\Users\\Ch4rl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ch4rl\\source\\repos\\SpaceAppsKAM\\Front\\obj\\",
+        "outputPath": "C:\\RepositoriosGit\\SpaceAppsKam\\SpaceAppsKAM\\Front\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ch4rl\\AppData\\Roaming\\NuGet\\NuGet.Config",

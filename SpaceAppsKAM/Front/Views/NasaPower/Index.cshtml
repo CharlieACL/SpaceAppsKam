@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Datos Climáticos - NASA Power";
+}
+
+<h2>Obtener Datos Climáticos para Agricultores</h2>
+
+<form method="post" asp-action="GetClimateData" asp-controller="NasaPower">
+    <div>
+        <label>Ingresar ubicación (Latitud,Longitud):</label>
+        <input type="text" name="location" placeholder="Ejemplo: 37.7749,-122.4194" required />
+    </div>
+    <br />
+    <div>
+        <button type="submit">Obtener Datos Climáticos</button>
+    </div>
+</form>
+
+<br />
+<div>
+    <button onclick="getLocation()">Usar Ubicación Actual</button>
+</div>
+
+<script>
+    // Obtener ubicación actual del navegador
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            alert("La geolocalización no es soportada por este navegador.");
+        }
+    }
+
+    function showPosition(position) {
+        document.querySelector('input[name="location"]').value = position.coords.latitude + ',' + position.coords.longitude;
+    }
+</script>
+
+<hr />
+
+@if (ViewBag.Data != null)
+{
+    <h3>Datos Climáticos Recibidos</h3>
+    <p>@ViewBag.Data</p>
+    <h3>Recomendación:</h3>
+    <p>@ViewBag.Recommendation</p>
+}
+else if (ViewBag.ErrorMessage != null)
+{
+    <div style="color: red;">@ViewBag.ErrorMessage</div>
+}

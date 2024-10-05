@@ -1,7 +1,15 @@
+using Front.Service;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Configuramos el HttpClient para la API
+builder.Services.AddHttpClient<NasaPowerApi_Service>();
+
+// Inyectamos el servicio NasaPowerApi_Service
+builder.Services.AddScoped<NasaPowerApi_Service>();
 
 var app = builder.Build();
 
